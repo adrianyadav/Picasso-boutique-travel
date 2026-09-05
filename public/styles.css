@@ -91,6 +91,9 @@ input,textarea{width:100%;margin-top:7px;padding:13px 14px;border:1px solid #d9d
 input:focus,textarea:focus{border-color:var(--gold)}
 .btn-full{width:100%;border:0}
 .form-note{display:block;color:#777f8d;margin-top:12px;line-height:1.4}
+.form-status{margin-top:12px;padding:12px 14px;font-size:14px;line-height:1.4}
+.form-status-success{background:#eaf6ee;color:#1e6b3c;border:1px solid #bfe3cb}
+.form-status-error{background:#fbeaea;color:#8a2c2c;border:1px solid #f0c2c2}
 footer{background:#09111f;color:#dce2ea;padding:60px 0 25px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
 .footer-brand{margin-bottom:20px}
