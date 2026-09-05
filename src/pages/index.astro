@@ -1,0 +1,247 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Picasso Boutique Travel home">
+        <span class="brand-mark">P</span>
+        <span class="brand-text">
+          <strong>Picasso</strong>
+          <small>Boutique Travel</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <a href="#about">About</a>
+        <a href="#journeys">Journeys</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#why-us">Why Us</a>
+        <a class="nav-cta" href="#enquire">Plan My Trip</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Independent • Personal • Curated</p>
+        <h1>Travel, designed like a work of art.</h1>
+        <p class="hero-copy">
+          Thoughtfully curated holidays, cruises, safaris and bespoke journeys —
+          designed around how you want to travel.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#enquire">Start Planning</a>
+          <a class="btn btn-ghost" href="#journeys">Explore Journeys</a>
+        </div>
+        <div class="hero-note">Based in Sydney • Planning travel across Australia and worldwide</div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow dark">Welcome to Picasso Boutique Travel</p>
+          <h2>Your holiday should feel personal from the very first conversation.</h2>
+        </div>
+        <div class="lead-copy">
+          <p>
+            We create carefully considered travel experiences for people who value
+            personal service, thoughtful recommendations and journeys tailored to their
+            interests, pace and budget.
+          </p>
+          <p>
+            Whether you are planning a relaxing island escape, an African safari,
+            a milestone celebration, a cruise or a complex multi-country itinerary,
+            Picasso Boutique Travel brings the pieces together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="journeys section section-soft" id="journeys">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Ways to travel</p>
+          <h2>Journeys made for you</h2>
+          <p>Start with an idea. We'll shape the details around your style of travel.</p>
+        </div>
+        <div class="card-grid">
+          <article class="travel-card">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85" alt="African safari landscape with wildlife" />
+            <div class="card-body">
+              <span>Africa</span>
+              <h3>Safaris & Wilderness</h3>
+              <p>Private game drives, iconic lodges and extraordinary wildlife experiences.</p>
+            </div>
+          </article>
+          <article class="travel-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Tropical island beach" />
+            <div class="card-body">
+              <span>Islands</span>
+              <h3>Luxury Escapes</h3>
+              <p>Beautiful resorts, villas and restorative stays in unforgettable settings.</p>
+            </div>
+          </article>
+          <article class="travel-card">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85" alt="Historic architecture in India" />
+            <div class="card-body">
+              <span>Culture</span>
+              <h3>India & Asia</h3>
+              <p>Food, heritage, wellness and immersive itineraries with a sense of place.</p>
+            </div>
+          </article>
+          <article class="travel-card">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85" alt="Luxury coastal resort" />
+            <div class="card-body">
+              <span>Celebrations</span>
+              <h3>Special Occasions</h3>
+              <p>Anniversaries, birthdays and once-in-a-lifetime trips worth remembering.</p>
+            </div>
+          </article>
+          <article class="travel-card">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85" alt="Cruise ship at sea" />
+            <div class="card-body">
+              <span>Ocean</span>
+              <h3>Cruise Holidays</h3>
+              <p>Ocean, river and expedition cruising matched to your preferred travel style.</p>
+            </div>
+          </article>
+          <article class="travel-card">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85" alt="Traveller looking at a map" />
+            <div class="card-body">
+              <span>Bespoke</span>
+              <h3>Tailor-Made Itineraries</h3>
+              <p>Multi-stop journeys built carefully around your dates, priorities and pace.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations section" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Inspiration</p>
+          <h2>Where will your next story begin?</h2>
+        </div>
+        <div class="destination-grid">
+          <div class="destination destination-large">
+            <img src="https://images.unsplash.com/photo-1528277342758-f1d7613953a2?auto=format&fit=crop&w=1400&q=85" alt="Safari landscape in Africa" />
+            <div class="destination-label"><span>Kenya & Tanzania</span><strong>The Great Safari</strong></div>
+          </div>
+          <div class="destination">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85" alt="Bali temple and landscape" />
+            <div class="destination-label"><span>Indonesia</span><strong>Bali</strong></div>
+          </div>
+          <div class="destination">
+            <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1000&q=85" alt="New Zealand mountain lake" />
+            <div class="destination-label"><span>New Zealand</span><strong>South Island</strong></div>
+          </div>
+          <div class="destination">
+            <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1000&q=85" alt="Thailand temple" />
+            <div class="destination-label"><span>Thailand</span><strong>Culture & Coast</strong></div>
+          </div>
+          <div class="destination">
+            <img src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=1000&q=85" alt="Taj Mahal in India" />
+            <div class="destination-label"><span>India</span><strong>Heritage Journeys</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section section-dark" id="why-us">
+      <div class="container">
+        <div class="section-heading light">
+          <p class="eyebrow">The boutique difference</p>
+          <h2>More thoughtful. More personal.</h2>
+        </div>
+        <div class="features">
+          <div class="feature"><b>01</b><h3>Personal planning</h3><p>One-to-one attention and recommendations shaped around you.</p></div>
+          <div class="feature"><b>02</b><h3>Carefully curated</h3><p>Hotels, routes and experiences selected for quality and fit.</p></div>
+          <div class="feature"><b>03</b><h3>Complex made simple</h3><p>Flights, stays, transfers and experiences coordinated into one journey.</p></div>
+          <div class="feature"><b>04</b><h3>Support that matters</h3><p>A real person to help before you leave and throughout your travel planning.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">How it works</p>
+          <h2>From first idea to final itinerary</h2>
+        </div>
+        <div class="steps">
+          <div><span>1</span><h3>Tell us your vision</h3><p>Share your dates, destination ideas, budget and travel style.</p></div>
+          <div><span>2</span><h3>We curate</h3><p>We shape a personalised itinerary with carefully selected options.</p></div>
+          <div><span>3</span><h3>Refine & confirm</h3><p>We fine-tune the details before you are ready to book.</p></div>
+          <div><span>4</span><h3>Travel beautifully</h3><p>Set off with your plans organised and your journey ready to enjoy.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="enquiry section" id="enquire">
+      <div class="container enquiry-wrap">
+        <div class="enquiry-copy">
+          <p class="eyebrow">Your next journey</p>
+          <h2>Tell us where you'd love to go.</h2>
+          <p>
+            Share a few details and we'll start shaping a trip around you.
+          </p>
+          <div class="contact-line">
+            <strong>Picasso Boutique Travel</strong><br />
+            Sydney, Australia<br />
+            <a href="mailto:hello@picassoboutiquetravel.com">hello@picassoboutiquetravel.com</a>
+          </div>
+        </div>
+
+        <form class="enquiry-form" action="mailto:hello@picassoboutiquetravel.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label>First name<input type="text" name="first-name" required /></label>
+            <label>Last name<input type="text" name="last-name" required /></label>
+          </div>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Phone<input type="tel" name="phone" /></label>
+          <div class="form-row">
+            <label>Destination<input type="text" name="destination" placeholder="Where would you like to go?" /></label>
+            <label>Travel dates<input type="text" name="dates" placeholder="Approximate dates" /></label>
+          </div>
+          <label>Tell us about your trip<textarea name="message" rows="5" placeholder="Number of travellers, interests, budget and anything else you'd like us to know."></textarea></label>
+          <button class="btn btn-primary btn-full" type="submit">Send Travel Enquiry</button>
+          <small class="form-note">This starter form opens your email app. It can later be connected to your preferred enquiry system.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-mark">P</span>
+          <span class="brand-text"><strong>Picasso</strong><small>Boutique Travel</small></span>
+        </div>
+        <p>Curated journeys. Personal service. Travel designed around you.</p>
+      </div>
+      <div>
+        <strong>Explore</strong>
+        <a href="#about">About</a>
+        <a href="#journeys">Journeys</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#enquire">Contact</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:hello@picassoboutiquetravel.com">hello@picassoboutiquetravel.com</a>
+        <span>Sydney, NSW, Australia</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Picasso Boutique Travel. All rights reserved.</span>
+      <span>picassoboutiquetravel.com</span>
+    </div>
+  </footer>
+</Layout>

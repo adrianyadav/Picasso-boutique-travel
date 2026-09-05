@@ -1,0 +1,36 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Picasso Boutique Travel | Curated Journeys, Beautifully Designed',
+  description = 'Picasso Boutique Travel creates personalised holidays, luxury escapes, cruises, safaris and tailor-made journeys from Australia to the world.',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#14213d" />
+    <meta property="og:title" content="Picasso Boutique Travel" />
+    <meta property="og:description" content="Curated journeys. Personal service. Travel designed around you." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <slot />
+    <script src="/script.js" is:inline></script>
+  </body>
+</html>
